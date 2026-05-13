@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Noto+Serif+SC:wght@300;400;500&display=swap");
+
+@theme {
+  --font-serif: "EB Garamond", Georgia, "Times New Roman", serif;
+  --font-body: "Spectral", Georgia, serif;
+}
+
+html {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #fafaf8;
+  color: #1a1a18;
+}
+
+::selection {
+  background-color: #e8e4dc;
+}
+
+/* prose overrides for literary feel */
+.prose {
+  --tw-prose-body: #1a1a18;
+  --tw-prose-headings: #1a1a18;
+  --tw-prose-links: #1a1a18;
+  --tw-prose-bold: #1a1a18;
+  --tw-prose-quotes: #4a4a44;
+  --tw-prose-quote-borders: #c8c4bc;
+  --tw-prose-hr: #ddd9d0;
+}
+
+.prose p {
+  font-family: var(--font-body);
+  line-height: 1.85;
+  letter-spacing: 0.01em;
+}
+
+.prose h1,
+.prose h2,
+.prose h3 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.prose blockquote {
+  font-style: italic;
+  border-left-width: 2px;
+  padding-left: 1.5rem;
+  margin-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Chinese language typography */
+.lang-zh {
+  font-family: "Noto Serif SC", "Source Han Serif SC", "STSong", serif;
+  font-size: 1.0625rem;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.lang-zh p {
+  text-indent: 2em;
+}
